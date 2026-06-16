@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+  <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>DS Arena | Favorite Moments</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="styles1.css">
+   </head>
+
+ <body>
+
+    <!-- nav -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand arena-logo" href="home.html">
+                DS ARENA
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarArena">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarArena">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link activeMX" href="home.html">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link activeMX" href="profiles.html">PROFILES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link activeMX" href="moments.html">MOMENTS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link activeMX" href="stats.html">STATS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link activeMX" href="create.html">CREATE</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link activeMX" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- page header -->
+
+    <header class="banner-lime py-5">
+        <div class="container text-center">
+            <h1 class="section-title mb-3">
+                OUR FAVORITE MOMENTS</h1>
+
+            <p class="max-text-box mx-auto">
+                Every adventure leaves behind memorable moments.
+                These highlights, achievements, and experiences
+                helped shape our journey throughout our higher
+                education experience.
+            </p>
+        </div>
+    </header>
+
+    <!-- daniel's quest highlights -->
+
+    <section class="profile-section py-5">
+        <div class="container">
+            <h2 class="mb-2">DANIEL'S QUEST HIGHLIGHTS</h2>
+
+            <p class="mb-4">
+                Special moments collected along the way.
+                The highlights, memories, and experiences
+                that made the journey memorable.
+            </p>
+
+            <div class="reel-container">
+                <div class="reel-card">
+                    <img src="p1.jpg" alt="Daniel Moment 1" 
+                    data-desc="Ready, Aim, FIRE!" 
+                    data-link="https://www.facebook.com/PUPROTCU/directory_contact_info"
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('daniel', this)">
+                </div>
+
+                <div class="reel-card">
+                    <img src="p2.jpg" alt="Daniel Moment 2" 
+                    data-desc="The Smile of Victory" 
+                    data-link="https://www.facebook.com/PUPROTCU/directory_contact_info"
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('daniel', this)">
+                </div>
+
+                <div class="reel-card">
+                    <img src="p3.jpg" alt="Daniel Moment 3" 
+                    data-desc="Late night study sessions that finally paid off." 
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('daniel', this)">
+                </div>
+
+                <div class="reel-card">
+                    <img src="p4.jpg" alt="Daniel Moment 4" 
+                    data-desc="My journey beings."    
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('daniel', this)">
+                </div>
+
+                 <div class="reel-card">
+                    <img src="p5.jpg" alt="Daniel Moment 5" 
+                    data-desc="Eyes on the prize, hand on the rifle."    
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('daniel', this)">
+                </div>
+
+                 <div class="reel-card">
+                    <img src="p6.jpg" alt="Daniel Moment 6" 
+                    data-desc="New Quest fighting the eternal flame. "    
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('daniel', this)">
+                </div>
+
+                 <div class="reel-card">
+                    <img src="p7.jpg" alt="Daniel Moment 7" 
+                    data-desc="The Gathering: Standing tall with the people who went through the grind with me."    
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('daniel', this)">
+                </div>
+
+                 <div class="reel-card">
+                    <img src="p8.jpg" alt="Daniel Moment 8" 
+                    data-desc="Buddy, catch!"    
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('daniel', this)">
+                </div>
+
+                 <div class="reel-card">
+                    <img src="p9.jpg" alt="Daniel Moment 9" 
+                    data-desc="100% fired up for the next challenge."    
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('daniel', this)">
+                </div>
+
+
+            </div>
+
+            <!-- DANIEL PREVIEW BOX -->
+            <div id="daniel-preview-box" class="preview-box text-center mt-4 d-none">
+                <hr class="my-4" style="border-top: 2px dashed #1a3311;">
+                <div class="preview-content mx-auto">
+                    <a id="daniel-preview-link" href="#" target="_blank">
+                    <img id="daniel-preview-img" src="" alt="Preview" class="img-fluid rounded mb-3">
+                    <p id="daniel-preview-desc" class="font-italic font-weight-bold lead"></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sophia's achivement log -->
+
+    <section class="hero-section py-5">
+        <div class="container">
+            <h2 class="text-white mb-2">SOPHIA'S ACHIEVEMENT LOG</h2>
+
+            <p class="text-white mb-4">
+                Favorite memories and milestones unlocked.
+                Proudly representing excellence while
+                continuously exploring new adventures.
+            </p>
+
+            <div class="reel-container">
+                <div class="reel-card">
+                    <img src="s1.jpg"  alt="Sophia Achievement 1"  
+                    data-desc="Unexpectedly passed the auditions for the senior high school dance organization!" 
+                    data-link="https://www.facebook.com/share/p/1Fccew18zV/"
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('sophia', this)">
+                </div>
+
+                <div class="reel-card">
+                    <img src="s3.jpg" alt="Sophia Achievement 2" 
+                    data-desc="Got the chance to perform on television, proudly representing the university." 
+                    data-link="https://www.facebook.com/share/p/18fxaM1dzK/"
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('sophia', this)">
+                </div>
+
+                <div class="reel-card">
+                    <img src="s4.jpg" alt="Sophia Achievement 3" 
+                    data-desc="Experienced my very first concert live at the Araneta Coliseum." 
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('sophia', this)">
+                </div>
+
+                <div class="reel-card">
+                    <img src="s6.jpg" alt="Sophia Achievement 4" 
+                    data-desc="Unlocked a new milestone: my first-ever dance competition." 
+                    data-link="https://www.facebook.com/share/v/1JH32L9FRa/"
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('sophia', this)">
+                </div>
+
+                 <div class="reel-card">
+                    <img src="s5.jpg" alt="Sophia Achievement 5"
+                    data-desc="Finally met up with my online friends and had an absolute blast!" 
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('sophia', this)">
+                </div>
+
+                 <div class="reel-card">
+                    <img src="s2.jpg" alt="Sophia Achievement 6" 
+                    data-desc="Won 1st place in a competition with PUP’s resident dance group, proudly reppin' the university!" 
+                    data-link="https://www.facebook.com/share/p/17mWXzSZ8w/"
+                    class="gallery-img img-fluid clickable-img" onclick="showPreview('sophia', this)">
+                </div>
+            </div>
+
+            <!-- SOPHIA PREVIEW BOX -->
+            <div id="sophia-preview-box" class="preview-box text-center mt-4 d-none text-white">
+                <hr class="my-4 border-light">
+                <div class="preview-content mx-auto">
+                   <a id="sophia-preview-link" href="#" target="_blank">
+                    <img id="sophia-preview-img" src="" alt="Preview" class="img-fluid rounded mb-3">
+                  </a>
+                    <p id="sophia-preview-desc" class="font-italic lead"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- journey -->
+
+    <section class="feedback-banner py-5">
+        <div class="container text-center">
+            <h3 class="mb-3">
+                MEMORY UNLOCKED</h3>
+
+            <p class="mb-0">
+                The best moments are not always grand achievements.
+                Sometimes, they are the simple experiences,
+                lessons learned, and people we shared them with.
+            </p>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="contact-isolated-section py-4">
+        <div class="container text-center">
+            <p class="mb-0 text-white">
+                © 2026 DS Arena | Favorite Moments
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function showPreview(person, imgElement) {
+            const previewBox = document.getElementById(person + '-preview-box');
+            const previewImg = document.getElementById(person + '-preview-img');
+            const previewDesc = document.getElementById(person + '-preview-desc');
+            const previewLink = document.getElementById(person + '-preview-link');
+
+            previewImg.src = imgElement.src;
+            previewDesc.textContent = imgElement.getAttribute('data-desc');
+
+            const imgLink = imgElement.getAttribute('data-link');
+        if (previewLink && imgLink) {
+            previewLink.href = imgLink;
+            previewImg.style.cursor = "pointer"; // hand shape  mouse pointer
+        } else if (previewLink) {
+            previewLink.removeAttribute('href'); // efas fallback
+            previewImg.style.cursor = "default";
+        }
+
+            previewBox.classList.remove('d-none');
+            previewBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+
+  </body>
+</html>
